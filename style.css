@@ -1,5 +1,322 @@
+@font-face {
+  font-family: "GothamMedium";
+  src: url(/fonts/1742-font.otf);
+}
+
+@font-face {
+  font-family: "GothamThin";
+  src: url(/fonts/1824-font.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
+  font-family: "GothamMedium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-family: "GothamThin", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p a {
+  font-family: "GothamThin", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.background1 {
+  background-image: url("/img/Model-3-Main-Hero-Desktop-LHD4K.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+}
+
+#page2 {
+  /* FOR 100% VIEWPORT'S HEIGHT AND WIDTH */
+  width: 100vw;
+  height: 100vh;
+  top: 100vh;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.background2 {
+  background-image: url("/img/model-3-hero-a-safety.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80vw;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+}
+
+#page3 {
+  /* FOR 100% VIEWPORT'S HEIGHT AND WIDTH */
+  width: 100vw;
+  height: 100vh;
+  top: 100vh;
+  position: relative;
+}
+
+.background3 {
+  background-image: url(/img/Model-3-Performance-Hero-mountain\ check.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+  z-index: -1;
+  position: absolute;
+  /* overflow: hidden; */
+}
+
+ul a:hover {
+  background-color: rgb(6, 6, 7);
+}
+
+#navbar {
+  max-width: 100%;
+}
+
+.tesla-logo {
+  width: 20%;
+  height: 60px;
+  float: left;
+}
+
+.logo {
+  width: 120px;
+  height: 24px;
+  position: relative;
+  left: 30px;
+  top: 18px;
+}
+
+.products {
+  width: 60%;
+  height: 60px;
+  float: left;
+}
+
+.side-menu {
+  width: 20%;
+  height: 60px;
+  float: left;
+}
+
+.products ul {
+  list-style: none;
+  text-align: center;
+  margin-left: 190px;
+}
+
+.side-menu ul {
+  /* float: right; */
+  list-style: none;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.products ul li {
+  float: left;
+  margin-top: 10px;
+  padding: 6px 20px;
+}
+
+.side-menu ul li {
+  float: left;
+  margin-top: 10px;
+  padding: 6px 15px;
+}
+
+.products ul li a {
+  text-decoration: none;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+}
+
+#model3 {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.demo-drive {
+  padding-top: 20px;
+}
+
+.stats-container {
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  margin-left: 30%;
+  /* width: 40%; */
+}
+
+.stats-container2 {
+  display: flex;
+  justify-content: space-between;
+  top: 60%;
+  position: absolute;
+  text-align: center;
+  margin-left: 600px;
+}
+
+.boost2 {
+  width: 200px;
+  height: 200px;
+}
+
+.mph {
+  width: 200px;
+  height: 200px;
+  margin: 0px 90px;
+}
+
+.motor2 {
+  width: 200px;
+  height: 200px;
+}
+
+.boost {
+  display: inline;
+  float: left;
+}
+
+.range {
+  display: inline;
+  float: left;
+  margin-left: 50px;
+  padding: 0px 50px;
+}
+
+.undertext {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.motor {
+  display: inline;
+  float: left;
+  padding: 0px 50px;
+}
+
+.buy {
+  display: inline;
+  margin-left: 50px;
+}
+
+.buy-btn {
+  background: transparent;
+  border: 3px #fff solid;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 4px 24px;
+  margin: 0px 0px 0px 8px;
+  width: 204px;
+  height: 40px;
+}
+
+.buy-btn a {
+  text-decoration: none;
+}
+
+.buy-btn a:hover {
+  background: #fff;
+  color: #555962;
+}
+
+.dark-text {
+  color: #555962;
+}
+
+.dark-text a {
+  color: #555962;
+}
+
+.safety-info {
+  float: right;
+  width: 350px;
+  /* height: 100%; */
+  /* text-align: center; */
+  /* padding: 50px 30px; */
+  margin-right: 40px;
+}
+
+#heading {
+  padding-top: 5px;
+  font-size: 28px;
+}
+
+.info-bottom {
+  display: flex;
+  justify-content: space-between;
+  top: 75%;
+  position: absolute;
+  /* text-align: center; */
+  margin-left: 400px;
+}
+
+.performance {
+  width: 350px;
+  height: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.performance-info {
+  width: 700px;
+  margin-left: 170px;
+}
+
+.buy-now {
+  position: absolute;
+  top: 84%;
+  right: 62%;
+}
+
+.buy-now-btn {
+  width: 204px;
+  height: 40px;
+  background: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-image: initial;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 4px 24px;
+  margin: 0px 0px 0px 8px;
+}
+
+.buy-now a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
