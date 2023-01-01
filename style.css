@@ -320,3 +320,28 @@ ul a:hover {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+.buy-now1 {
+  position: absolute;
+  top: 90%;
+  right: 2%;
+}
+
+.buy-now-btn1 {
+  width: 204px;
+  height: 40px;
+  background: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-image: initial;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 4px 24px;
+  margin: 0px 0px 0px 8px;
+}
+
+.buy-now1 a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
